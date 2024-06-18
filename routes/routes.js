@@ -14,7 +14,7 @@ router.get('/aluno', AlunoController.showAll)
 router.get('/professor/:id', ProfessorController.show)
 router.get('/aluno/:id', AlunoController.show)
 
-router.get ('/',(req, res)=> {
+router.get ('/pagina',(req, res)=> {
     res.sendFile(path.resolve('./public/pagina.html'))
 })
 
